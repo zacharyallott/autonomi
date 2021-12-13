@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Autonomi</title>
+<meta name="description" content="Autonomi, A Brief History of Authority, influencing our ability to move forward as individuals and as a community.">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-46523205-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<link rel="icon" type="image/vnd.microsoft.icon"
+     href="https://www.autonomi.org/imgs/favicon.ico" />
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+<script src="scripts/jquery.scrollorama.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="MyFontsWebfontsKit.css">
+
+<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+
+<script type="text/javascript">
+
+
+$(document).ready(function(){
+
+
+
+
+    $('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash,
+	    $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+
+    // WINDOW WIDTH
+
+
+    // WINDOW WIDTH
+
+    // DEVICE DETECT
+
+   if(navigator.userAgent.match(/iPad/i)){
+ location.href = '/mobile.html';
+}
+
+if(navigator.userAgent.match(/iPhone/i)){
+ location.href = '/mobile.html';
+}
+
+
+if(navigator.userAgent.match(/Android/i)){
+location.href = '/mobile.html';
+}
+
+
+
+if(navigator.userAgent.match(/BlackBerry/i)){
+location.href = '/mobile.html';
+}
+
+
+if(navigator.userAgent.match(/webOS/i)){
+ location.href = '/mobile.html';
+}
+
+    // DEVICE DETECT
+
+     $("#splash").mouseenter(function() {
+      $(".scroll").fadeIn();
+}).mouseleave(function() {
+      $(".scroll").fadeOut();
+});
+
+$('.btn-show-more').each(function() {
+    var link = $(this),
+        target = $(link.attr('href')).hide();
+
+    link.mouseenter(function() {
+      target.fadeIn();
+
+
+
+    })
+});
+
+
+
+	//.parallax(xPosition, speedFactor, outerHeight) options:
+	//xPosition - Horizontal position of the element
+	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+	$('#splash').parallax("50%", 0.1);
+	$('#first').parallax("50%", 0.1);
+	$('#third').parallax("50%", 0.6);
+    $('#forth').parallax("50%", 0.15);
+    $('#fifth').parallax("50%", 0.35);
+    $('#sixth').parallax("50%", 0.25);
+    $('#about').parallax("50%", 0.25);
+
+			// initialize the plugin, pass in the class selector for the sections of content (blocks)
+			var scrollorama = $.scrollorama({ blocks:'.scrollblock' });
+
+    scrollorama
+
+    .animate('#topbar',{ duration: 200, property:'opacity', start:0, end: 1 })
+    .animate('.scroll',{ duration: 800, property:'opacity', start:1, end: 0 })
+
+				.animate('.authority',{ duration: 1000, property:'top', start:184, end: 1000 })
+        .animate('.brief',{ duration: 180, property:'top', start:350, end: 190})
+        .animate('.history',{ duration: 600, property:'top', start:285, end: -100})
+        .animate('.scroll',{ duration: 1200, property:'top', start:144, end: 1200 })
+
+        .animate('.paternalimg',{ delay:200,duration: 2000, property:'top', start:-30, end: 400})
+      .animate('.egyptimg',{ delay:1200,duration: 1200, property:'top', start:1000, end: 1250})
+    .animate('.neolithic',{ delay:1000,duration: 1200, property:'top', start:200, end: 500})
+    .animate('.urnammuimg',{ delay:1400,duration: 1500, property:'top', start:1700, end: 1450})
+    .animate('#roman2',{ delay:2400,duration: 2400, property:'top', start:300, end: -450})
+
+    .animate('.wheel',{ delay:1000,duration: 1200, property:'rotate', start:200, end: 500})
+    .animate('.eye1',{ delay:1800,duration: 1200, property:'top', start:1000, end: 1700})
+    .animate('.foran',{ delay:1800,duration: 1400, property:'top', start:2400, end: 1670})
+    .animate('.eye2',{ delay:1800,duration: 1200, property:'top', start:2500, end: 1450})
+    .animate('.moses',{ delay:1800,duration: 1200, property:'top', start:2500, end: 1500})
+
+    .animate('#italy',{ delay:1800,duration: 2000, property:'top', start:500, end: 0})
+    .animate('#greece',{ delay:2800,duration: 1600, property:'top', start:350, end: 760})
+    .animate('#republic',{ delay:3200,duration: 1400, property:'top', start:0, end: 200})
+
+    .animate('#aristotle',{ delay:2800,duration: 500, property:'top', start:0, end: 200})
+    .animate('#aristotleimg',{ delay:2500,duration: 1800, property:'top', start:1400, end: 300})
+    .animate('#empire',{ delay:3000,duration: 2200, property:'top', start:1200, end: 1800})
+
+
+	.animate('#fuedal',{ delay:5000,duration: 1500, property:'top', start:-1800, end: -1500})
+		.animate('#fuedal_2',{ delay:5000,duration: 1500, property:'top', start:250, end:250})
+	.animate('#pope',{ delay:5500,duration: 1000, property:'top', start:-1800, end: -2400})
+	.animate('#crown',{ delay:5800,duration: 2000, property:'top', start:-2200, end: -1900})
+	.animate('#renaissance_img',{ delay:5000,duration: 2000, property:'top', start:-1600, end:-1000})
+	.animate('#renaissance_img',{ delay:5000,duration: 3000, property:'rotate', start:100, end:-30})
+	.animate('#circle',{ delay:5600,duration: 2000, property:'top', start:-2200, end: -1900})
+	.animate('#circle',{ delay:7200,duration: 300, property:'opacity', start:1, end: 0})
+	.animate('#inqui_img',{ delay:5800,duration: 1500, property:'top', start:-1400, end: -2400})
+
+
+    .animate('#arrows',{ delay:7600,duration: 2000, property:'top', start:-300, end:200})
+    .animate('#industrial_crowd',{ delay:7000,duration: 2000, property:'top', start:0, end:300})
+    .animate('#industrial_red',{ delay:7000,duration: 1600, property:'top', start:0, end:-180})
+    .animate('#haiti',{ delay:7500,duration: 2500, property:'top', start:0, end:300})
+    .animate('#thoreau',{ delay:7800,duration: 2200, property:'top', start:800, end:150})
+    .animate('#thoreau_type',{ delay:7800,duration: 2800, property:'top', start:200, end:-250})
+
+    .animate('#napoleon',{ delay:7500,duration: 2800, property:'top', start:230, end:230})
+    .animate('#napoleon_ring',{ delay:7500,duration: 2800, property:'top', start:-30, end:-30})
+    .animate('#napoleon_ring',{ delay:7500,duration: 2800, property:'left', start:90, end:90})
+    .animate('#napoleon_ring',{ delay:7500,duration: 2800, property:'rotate', start:-350, end:0})
+
+    .animate('#mussolini',{ delay:8500,duration: 2800, property:'top', start:100, end:100})
+    .animate('#mussolini',{ delay:8500,duration: 2800, property:'left', start:180, end:180})
+    .animate('#mussolini',{ delay:9000,duration: 3000, property:'rotate', start:0, end:100})
+
+    .animate('#wwone',{ delay:8500,duration: 2400, property:'top', start:400, end:-10})
+    .animate('#wwone',{ delay:8500,duration: 2800, property:'left', start:-200, end:-200})
+
+    .animate('#xxx',{ delay:8500,duration: 2400, property:'top', start:-500, end:-570})
+    .animate('#xxx',{ delay:10300,duration: 1000, property:'opacity', start:0, end:1})
+
+    .animate('#worker',{ delay:10500,duration: 2400, property:'top', start:-150, end:200})
+
+    .animate('#plane',{ delay:9900,duration: 2800, property:'top', start:-200, end:300})
+    .animate('#plane',{ delay:8500,duration: 2800, property:'left', start:-200, end:-200})
+
+
+    .animate('#civil',{ delay:9900,duration: 2800, property:'left', start:-300, end:-300})
+    .animate('#civil',{ delay:11000,duration: 1800, property:'top', start:-150, end:0})
+
+    .animate('#rights',{ delay:11000,duration: 1800, property:'top', start:-620, end:-350})
+    .animate('#rights',{ delay:10000,duration: 2800, property:'left', start:-180, end:-190})
+    .animate('#rights',{ delay:11880,duration: 300, property:'opacity', start:0, end:1})
+
+.animate('#moon',{ delay:11880,duration: 800, property:'top', start:0, end:-300})
+    .animate('#moon',{ delay:11880,duration: 2000, property:'left', start:-150, end:-150})
+
+    .animate('#globe',{ delay:11900,duration: 1800, property:'left', start:-200, end:100})
+    .animate('#globe_lite',{ delay:11900,duration: 2800, property:'top', start:-800, end:-800})
+        .animate('#globe_lite',{ delay:11700,duration: 4500, property:'left', start:100, end:-600})
+
+        .animate('#internet',{ delay:11700,duration: 4500, property:'left', start:-200, end:-200})
+        .animate('#internet',{ delay:11700,duration: 4500, property:'top', start:0, end:300})
+
+        .animate('#jail_black',{ delay:11700,duration: 2000, property:'top', start:-695, end:-495})
+        .animate('#jail_grey',{ delay:11700,duration: 2000, property:'top', start:0, end:100})
+
+        .animate('#proudhon',{ delay:12100,duration: 2500, property:'top', start:100, end:500})
+        .animate('#proudhon_txt',{ delay:12500,duration: 2800, property:'top', start:0, end:300})
+        .animate('#proudhon_txt',{ delay:12500,duration: 2800, property:'left', start:-120, end:-120})
+
+        .animate('#surveillance',{ delay:12500,duration: 2800, property:'top', start:0, end:-200})
+         .animate('#surveillance',{ delay:13550,duration: 450, property:'opacity', start:0, end:1})
+        .animate('#surveillance',{ delay:12500,duration: 2800, property:'left', start:-180, end:-180})
+
+    .animate('#about',{ delay:13700,duration: 1200, property:'top', start:0, end:-250})
+    .animate('#dropcap',{ delay:13500,duration: 1200, property:'top', start:-250, end:0})
+
+
+
+})
+</script>
+</head>
+
+<body>
+
+    <div class="scrollblock" id="container">
+<div id="topbar">
+    <a href="#about"><img class="img_logo" src="imgs/logo_red.png" onmouseover="this.src='imgs/logo_black.png'" onmouseout="this.src='imgs/logo_red.png'"/></a>
+    </div>
+
+	<div id="splash">
+		<div class="story">
+
+	    	<div class=brief>a brief</div>
+            <div class=scroll>scroll down <img src="imgs/arrow_white.png"alt="arrow"></div>
+            <div class="history">history of</div>
+            <div class="authority">authority.</div>
+
+	    </div> <!--.story-->
+	</div> <!--#splash-->
+
+
+
+	<div id="first">
+	  <div class="timeline1"><img src="imgs/timeline_1.png"alt="timeline"></div>
+		<div class="story">
+
+
+
+
+
+            <div class="event_right_first">
+    <!--IMGS-->
+
+            <div class="paternalimg">
+                <img src="imgs/content/paternal.png" alt="arrow" width="350px" height="350px"></div>
+
+
+            <div class="egyptimg">
+                <img src="imgs/content/pyramid.png" alt="arrow" width="350px" height="350px">
+            </div>
+
+            <div class="urnammuimg">
+                <img src="imgs/content/urnammu.png" alt="arrow" width="350px" height="350px">
+            </div>
+
+
+
+    <!--IMGS-->
+
+                <div id="paternal">
+            <h3>9.000 bc</h3>
+            <h1>Power Strictly Paternal
+            <a href="http://en.wikipedia.org/wiki/Paternalism" target="_blank" ><img src="imgs/info_black.png" onmouseover="this.src='imgs/info_red.png'" onmouseout="this.src='imgs/info_black.png'"/></a>
+            </h1>
+            <p><h2>Authority rarely makes it beyond the family or tribe, no human was able to exercise long-term control over others.
+              </h2>
+                <div id="tellme">
+                    <a href="#paternal-more" class="btn-show-more">a little more. <img src="imgs/arrow_black.png"alt="arrow"></a>
+                </div><br>
+                <div id="paternal-more" class="show-more"><h4>Parental power, or paternalism, limits liberty of a person or group of people often for their own good.</h4></div>
+
+
+                </div> <!--.paternal-->
+
+
+                <div id="sumerian">
+            <h3>3.500 bc</h3>
+            <h1>First Sumerian Civilizations
+            <a href="http://en.wikipedia.org/wiki/Sumer" target="_blank" ><img src="imgs/info_black.png" onmouseover="this.src='imgs/info_red.png'" onmouseout="this.src='imgs/info_black.png'"/></a>
+            </h1>
+            <p><h2>Some the earliest civilizations begin to appear in Mesopatamia loacated in modern day Iraq.</h2>
+                <div id="tellme">
+
+                    <a href="#sumerian-more" class="btn-show-more">a little more. <img src="imgs/arrow_black.png"alt="arrow"></a>
+
+                </div><br>
+                <div id="sumerian-more" class="show-more"><h4>Sumerian civilizations had no known code of law, as a result authority remained largely within small tribes.</h4></div>
+                    </div> <!--#sumerian-->
+
+                    <div id="egypt">
+            <h3>3.100 bc</h3>
+            <h1>Egypt <br>Emerges
+
+             <a href="http://en.wikipedia.org/wiki/Ancient_Egypt" target="_blank" ><img src="imgs/info_black.png" onmouseover="this.src='imgs/info_red.png'" onmouseout="this.src='imgs/info_black.png'"/></a>
+
+            </h1>
+            <p><h2>The first pharoah of Egypt unifies a large portion of Northern Africa, Egypt lasts nearly 3,000 years.</h2>
+                <div id="tellme">
+                    <a href="#egypt-more" class="btn-show-more">a little more.<img src="imgs/arrow_black.png"alt="arrow"></a>
+                </div><br>
+                <div id="egypt-more" class="show-more"><h4>Egypt is an example of an early dynastic rule, as well as the first instance where power was concentrated enough to contol slaves.</h4></div>
+                </div> <!--#egypt-->
+
+                <div id="urnammu">
+            <h3>2.100 bc</h3>
+            <h1>Code of <br>Ur-Nammu
+            <a href="http://en.wikipedia.org/wiki/Code_of_Ur-Nammu" target="_blank" ><img src="imgs/info_black.png" onmouseover="this.src='imgs/info_red.png'" onmouseout="this.src='imgs/info_black.png'"/></a>
+
+            </h1>
+            <p><h2>The oldest known code of law from Mesopotamia, written in the Sumerian language.</h2>
+                <div id="tellme">
+
+                    <a href="#urnammu-more" class="btn-show-more">a little more.<img src="imgs/arrow_black.png"alt="arrow"></a>
+                </div><br>
+                <div id="urnammu-more" class="show-more"><h4>The code was also the first instance of monetary fines for bodily damage, along with capital punishment for murder, robbery and adultery.</h4></div>
+
+                </div> <!--#urnammu-->
+
+                <div id="ten">
+            <h3>1.500 bc</h3>
+            <h1>Ten
+            <a href="http://en.wikipedia.org/wiki/Ten_Commandments" target="_blank" ><img src="imgs/info_black.png" onmouseover="this.src='imgs/info_red.png'" onmouseout="this.src='imgs/info_black.png'"/></a>
+
+            <br>Commandments</h1>
+            <p><h2>After being expelled from Egypt, Moses divinely creates the Ten Commandments</h2>
+                <div id="tellme">
+
+                    <a href="#ten-more" class="btn-show-more">a little more.<img src="imgs/arrow_black.png"alt="arrow"></a>
+                </div><br>
+                <div id="ten-more" class="show-more"><h4>The Commandments where similiar to past codes such as Ur-Nammu, although incurring the idea of “an eye for an eye.”</h4></div>
+                </div> <!--#ten-->
+
+	       </div> <!--.event_right_first-->
+
+            <div class="event_left_first">
+                <!--IMGS-->
+                <div class="neolithic">
+                <img src="imgs/content/neolithic.png" alt="arrow" >
+            </div>
+
+                 <div class="wheel">
+                <img src="imgs/content/wheel.png" alt="arrow" ></div>
+
+
+                <div id="eyeforaneye">
+
+                  <div class="moses">
+                <img src="imgs/content/moses.png" alt="arrow" ></div>
+
+                	<div class="eye1">
+                <img src="imgs/content/eye.png" alt="arrow" ></div>
+
+
+
+                	<div class="eye2">
+                <img src="imgs/content/eye.png" alt="arrow" ></div>
+
+              <div class="foran">
+               for an</div>
+
+                </div>
+
+            <!--IMGS-->
+                    <div id="neolithic">
+            <h3>8.000 bc</h3>
+            <h1>Neolithic <br> Revolution
+
+            </h1>
+            <p><h2>The development of agriculture allowed for denser populations, creating the first civilizations.</h2>
+                </div> <!--.neolithic-->
+
+                <div id="wheel">
+            <h3>4.000 bc</h3>
+            <h1>Wheel Invented</h1>
+                </div> <!--#wheel-->
+
+
+
+
+
+                <div id="writing">
+            <h3>3.200 bc</h3>
+            <h1>Writing Invented</h1>
+                </div> <!--#writing-->
+
+
+
+            </div><!--.event_left_first-->
+	    </div> <!--.story-->
+	</div> <!--#first-->
+
+	<!---------------------------------------------------->
+
+	<div id="second">
+	<div class="timeline2"><img src="imgs/timeline_2.png"alt="timeline" height="2400px"></div>
+		<div class="story">
+
+            <div class="event_right_second">
+
+
+                <div id="romanking">
+            <h3>735 bc</h3>
+            <h1>Roman <br> Kingdom
+            <a href="http://en.wikipedia.org/wiki/Roman_Kingdom" target="_blank" ><img src="imgs/info_white.png" onmouseover="this.src='imgs/info_red.png'" onmouseout="this.src='imgs/info_white.png'"/></a>
+
+            </h1>
+            <p><h2>The Roman Kingdom was the first of three Roman civilizations, initially controlling portions of Italy and later controlling most of Europe.</h2>
+                <div id="tellme">
+                    <a href="#roman-more" class="btn-show-more">a little more. <img src="imgs/arrow.png"alt="arrow"></a>
+                </div><br>
+                <div id="roman-more" class="show-more"><h4>The Roman Kingdom initially operated as a monarchy with an appointed senate by the first ruler, Romulus.</h4></div>
+
+
+                </div> <!--#romanking-->
+
+                <div id="greece"><img src="imgs/content/greece.png" alt="timeline"></div>
+
+                <div id="greece">
+            <h3>700 bc</h3>
+            <h1>Greek<br> City-State
+            <a href="http://en.wikipedia.org/wiki/Ancient_Greece" target="_blank" ><img src="imgs/info_white.png" onmouseover="this.src='imgs/info_red.png'" onmouseout="this.src='imgs/info_white.png'"/></a>
+
+            </h1>
+            <p><h2>Several hundred independent Greek City-States created a unique governmental structure, with distinct and decentralized governments as well as unifications of Greek cultural identity.</h2>
+                <div id="tellme">
+
+                    <a href="#greece-more" class="btn-show-more">a little more. <img src="imgs/arrow.png"alt="arrow"></a>
+
+                </div><br>
+                <div id="greece-more" class="show-more"><h4>Athens also provided the first example of democracy, which many other city-states implemented.</h4></div>
+                    </div> <!--#greece-->
+
+                    <div id="republic"><img src="imgs/content/republic.png" alt="republic"></div>
+
+                    <div id="romanrepub">
+            <h3>500 bc</h3>
+            <h1>Roman<br>Republic
+            <a href="http://en.wikipedia.org/wiki/Roman_Republic" target="_blank" ><img src="imgs/info_white.png" onmouseover="this.src='imgs/info_red.png'" onmouseout="this.src='imgs/info_white.png'"/></a>
+
+            </h1>
+            <p><h2>The Republic replaced the Monarchy with citizen-elected consuls, and a complex constitution that dealt with the seperation of powers as well as checks and balances.</h2>
+                <div id="tellme">
+
+                    <a href="#romanrepub-more" class="btn-show-more">a little more. <img src="imgs/arrow.png"alt="arrow"></a>
+
+                </div><br>
+                <div id="romanrepub-more" class="show-more"><h4>Public offices where also limited to one year, so that no single individual wielded absolute power.</h4></div>
+                    </div> <!--#romanrepub-->
+
+
+
+                    <div id="romanemp">
+            <h3>27 bc</h3>
+            <h1>Roman<br>Empire
+            <a href="http://en.wikipedia.org/wiki/Roman_Empire" target="_blank" ><img src="imgs/info_white.png" onmouseover="this.src='imgs/info_red.png'" onmouseout="this.src='imgs/info_white.png'"/></a>
+
+            </h1>
+            <p><h2>An autocratic government replaced the Roman Republic with power centralized under one monarch who could declare war and held religious authority.</h2>
+                <div id="tellme">
+
+                    <a href="#romanemp-more" class="btn-show-more">a little more. <img src="imgs/arrow.png"alt="arrow"></a>
+
+                </div><br>
+                <div id="romanemp-more" class="show-more"><h4>Using Military strength and harsh violence the Empire extended it’s size expanding to Northern Africa, Spain, and parts of the Middle East.</h4></div>
+                    </div> <!--#romanemp-->
+
+                <div id="empire"><img src="imgs/content/empire.png" alt="empire"></div>
+
+                <div id="roman2"><img src="imgs/content/roman2.png" alt="empire"></div>
+
+	       </div> <!--.event_right-->
+
+            <div class="event_left_second">
+
+                <div id="italy"><img src="imgs/content/italy.png" alt="timeline"></div>
+
+                <div id="aristotleimg"><img src="imgs/content/aristotle.png" alt="timeline"></div>
+
+
+            <div id="aristotle">
+            <h6>“In a democracy the poor will have more power than the rich, because there are more of them, and the will of the majority is supreme”</h6>
+            <h5>Aristotle</h5>
+                </div> <!--#aristotle-->
+
+
+            </div><!--.event_left-->
+
+	    </div> <!--.story-->
+	</div> <!--#second-->
+
+<!---------------------------------------------------->
+
+
+<div id="third">
+<div class="timeline3"><img src="imgs/timeline_3.png"alt="timeline"></div>
+		<div class="story">
+
+            <div class="event_right_third">
+
+            <div id="byzantine">
+            <h3>330 ad</h3>
+            <h1>Byzantine<br>Empire
+             <a href="http://en.wikipedia.org/wiki/Byzantine_Empire" target="_blank" ><img src="imgs/info_white.png" onmouseover="this.src='imgs/info_black.png'" onmouseout="this.src='imgs/info_white.png'"/></a>
+           </h1>
+            <p><h2>The Byzantine Empire succeeded the Roman Empire taking much of Eastern Europe and lasting nearly 1,000 years.</h2>
+                <div id="tellme">
+
+                    <a href="#byzantine-more" class="btn-show-more">a little more. <img src="imgs/arrow_white.png"alt="arrow"></a>
+
+                </div><br>
+                <div id="byzantine-more" class="show-more"><h4>As a monarchy the Byzantine Empire had a sole emperor who was believed to have divine power, with a senate that served as an advisory.</h4></div>
+                    </div> <!--#byzantine-->
+
+
+                    <div id="church">
+            <h3>800 ad</h3>
+            <h1>the<br>Church
+             <a href="http://en.wikipedia.org/wiki/Catholic_Church#History" target="_blank" ><img src="imgs/info_white.png" onmouseover="this.src='imgs/info_black.png'" onmouseout="this.src='imgs/info_white.png'"/></a>
+           </h1>
+            <p><h2>Christianity begins to accumulate power with the formation of an early papacy.</h2>
+                <div id="tellme">
+
+                    <a href="#church-more" class="btn-show-more">a little more. <img src="imgs/arrow_white.png"alt="arrow"></a>
+
+                </div><br>
+                <div id="church-more" class="show-more"><h4>Power being split between monarchs and popes often lead to a power struggle between the state and the church.</h4></div>
+                    </div> <!--#church-->
+
+                    <div id="magna">
+            <h3>1215 ad</h3>
+            <h1>Magna<br>Carta
+             <a href="http://en.wikipedia.org/wiki/Magna_Carta" target="_blank" ><img src="imgs/info_white.png" onmouseover="this.src='imgs/info_black.png'" onmouseout="this.src='imgs/info_white.png'"/></a>
+           </h1>
+            <p><h2>As a response to royalty ruled states, subjects of England forced the king to sign the first document of its kind that limited his powers.</h2>
+                <div id="tellme">
+
+                    <a href="#magna-more" class="btn-show-more">a little more. <img src="imgs/arrow_white.png"alt="arrow"></a>
+
+                </div><br>
+                <div id="magna-more" class="show-more"><h4>The Magna Carta eventually led England to constitutional law or the separation of powers into executive, legislative and judicial.</h4></div>
+                    </div> <!--#magna-->
+
+
+           <div id="inqui">
+            <h3>1470 ad</h3>
+            <h1>the Spanish<br>Inquisition
+             <a href="http://en.wikipedia.org/wiki/Spanish_Inquisition" target="_blank" ><img src="imgs/info_white.png" onmouseover="this.src='imgs/info_black.png'" onmouseout="this.src='imgs/info_white.png'"/></a>
+           </h1>
+            <p><h2>The church as well as the Monarchy of Spain forced Musllim and Jewish people in mass to convert to Christianity or leave.</h2>
+                <div id="tellme">
+
+                    <a href="#inqui-more" class="btn-show-more">a little more. <img src="imgs/arrow_white.png"alt="arrow"></a>
+
+                </div><br>
+                <div id="inqui-more" class="show-more"><h4>Officials confiscated a great deal of wealth from converted Jews and others tried by the Inquisition, which could be seen as being devised simply to rob people.</h4></div>
+                    </div> <!--#inqui-->
+
+
+                    <div id="west">
+            <h3>1648 ad</h3>
+            <h1>Peace of<br>Westaphalia
+             <a href="http://en.wikipedia.org/wiki/Peace_of_Westphalia" target="_blank" ><img src="imgs/info_white.png" onmouseover="this.src='imgs/info_black.png'" onmouseout="this.src='imgs/info_white.png'"/></a>
+           </h1>
+            <p><h2>The Peace of Westaphalia was a series of treaties that ended the thirty years wars, which included most of the countries in Europe.</h2>
+                <div id="tellme">
+
+                    <a href="#west-more" class="btn-show-more">a little more. <img src="imgs/arrow_white.png"alt="arrow"></a>
+
+                </div><br>
+                <div id="west-more" class="show-more"><h4>The Peace of Westaphalia Lead to the rise of the Nation-State in Europe as well as notions of citizenship and nationalism.</h4></div>
+                    </div> <!--#west-->
+
+                    <div id="pope"><img src="imgs/content/pope.png" alt="timeline"></div>
+                    <div id="crown"><img src="imgs/content/crown.png" alt="timeline"></div>
+                    <div id="circle"><img src="imgs/content/circle.png" alt="timeline"></div>
+                    <div id="inqui_img"><img src="imgs/content/inquisition.png" alt="timeline"></div>
+
+            </div><!--.event_right-->
+
+
+			<div class="event_left_third">
+
+        <div id="fuedalism">
+            <h3>1000 ad</h3>
+            <h1>Feudalism</h1>
+            <p><h2>A structure of society that flourished for 600 years, seperating society into three classes, lords, vassels and fiefs.</h2>
+        </div> <!--#fuedalism-->
+
+         <div id="blackdeath">
+            <h3>1350 ad</h3>
+            <h1>Black Death</h1>
+            <p><h2>One of the most devastating pandemics in human history, killing 75-200 million as a result of increased trade and poor sanitation.</h2>
+        </div> <!--#blackdeath-->
+
+
+
+            <div id="renaissance">
+            <h3>1400 ad</h3>
+            <h1>Renaissance</h1>
+            <p><h2>A cultural movement that profoundly affected European intellectual life influencing literature, philosophy, art, music, politics, science and religion.</h2>
+        </div> <!--#renaissance-->
+
+
+
+            <div id="print">
+            <h3>1440 ad</h3>
+            <h1>Invention of the<br>Printing Press</h1>
+            <p><h2>Gutenburgs invention of the <br> printing press, allowing for the wider distribution of knowledge.</h2>
+        </div> <!--#blackdeath-->
+
+
+
+        <div id="fuedal"><img src="imgs/content/fuedal.png" alt="timeline"></div>
+        <div id="fuedal_2"><img src="imgs/content/fuedal_2.png" alt="timeline"></div>
+
+        <div id="renaissance_img"><img src="imgs/content/renaissance.png" alt="timeline"></div>
+
+
+            </div><!--.event_left_third-->
+
+
+	    </div> <!--.story-->
+	</div> <!--#third-->
+
+<!---------------------------------------------------->
+
+	<div id="forth">
+		<div class="story">
+ <div class="timeline4"><img src="imgs/timeline_4.png"alt="timeline"></div>
+
+            <div class="event_right_forth">
+
+             <div id="rousseau">
+                <h6>“Laws are always useful to those who possess and injurious to those that have nothing”</h6>
+                <h5>Jean-Jacques Rousseau</h5>
+                </div> <!--#rousseau-->
+
+             <div id="arrows"><img src="imgs/content/arrows.png" alt="timeline"></div>
+
+		      <div id="frenchrev">
+                <h3>1790 ad</h3>
+                <h1>French <br> Revolution
+                <a href="http://en.wikipedia.org/wiki/French_Revolution" target="_blank" ><img src="imgs/info_black.png" onmouseover="this.src='imgs/info_red.png'" onmouseout="this.src='imgs/info_black.png'"/></a>
+
+                </h1>
+                <p><h2>As a result of enlightenment thinking and the success of the revolution in the Americas. The French Revolution peaked in the storming of the Bastille and resulted in a new constitution.</h2>
+                <div id="tellme">
+                    <a href="#frenchrev-more" class="btn-show-more">a little more. <img src="imgs/arrow.png"alt="arrow"></a>
+                </div><br>
+                <div id="frenchrev-more" class="show-more"><h4>Old ideas about tradition and hierarchy regarding monarchs, aristocrats, and the Catholic Church were abruptly overthrown under the mantra of "Liberté, égalité, fraternité," meaning liberty, equality and fraternity.</h4></div>
+                </div><!--#frenchrev-->
+
+             <div id="napoleon"><img src="imgs/content/napoleon.png" alt="timeline"></div>
+            <div id="napoleon_ring"><img src="imgs/content/napoleon_ring.png" alt="timeline"></div>
+
+            <div id="napoleon">
+                <h3>1804 ad</h3>
+                <h1>Napoleon
+                <a href="http://en.wikipedia.org/wiki/Napoleon" target="_blank" ><img src="imgs/info_black.png" onmouseover="this.src='imgs/info_red.png'" onmouseout="this.src='imgs/info_black.png'"/></a>
+
+                </h1>
+                <p><h2>Following ten years of revolutionary war Napoleon staged a coup taking power and appointing himself emperor. Napoleon exteneded the French Empire as far as Moscow before being defeated.</h2>
+                <div id="tellme">
+                    <a href="#napoleon-more" class="btn-show-more">a little more. <img src="imgs/arrow.png"alt="arrow"></a>
+                </div><br>
+                <div id="napoleon-more" class="show-more"><h4>As is common in history, revolutions often lead to the rule of an even stronger power.</h4></div>
+             </div><!--#napoleon-->
+
+             <div id="americancivil">
+                <h3>1865 ad</h3>
+                <h1>American Civil War
+                <a href="http://en.wikipedia.org/wiki/American_Civil_War" target="_blank" ><img src="imgs/info_black.png" onmouseover="this.src='imgs/info_red.png'" onmouseout="this.src='imgs/info_black.png'"/></a>
+
+                </h1>
+                <p><h2>Besides resulting in the Emancipation Proclamation and freeing of slaves, the Civil War strengthened federal and centralized government in the U.S</h2>
+                <div id="tellme">
+                    <a href="#americancivil-more" class="btn-show-more">a little more. <img src="imgs/arrow.png"alt="arrow"></a>
+                </div><br>
+                <div id="americancivil-more" class="show-more"><h4>The Civil War was also one of the first industrial wars with the extensive use of railroads, the telegraph, steamships, and mass produced weapons.</h4></div>
+             </div><!--#americancivil-->
+
+
+             <div id="woundedknee">
+                <h3>1890 ad</h3>
+                <h1>Battle of
+                <a href="http://en.wikipedia.org/wiki/Wounded_Knee_Massacre" target="_blank" ><img src="imgs/info_black.png" onmouseover="this.src='imgs/info_red.png'" onmouseout="this.src='imgs/info_black.png'"/></a>
+
+                <br> Wounded Knee
+
+                </h1>
+                <p><h2>The Massacre marked the end of the American Indian Wars, in which Native Americans where removed from their lands in order for the federal government to claim territories from coast-to-coast.</h2>
+                <div id="tellme">
+                    <a href="#woundedknee-more" class="btn-show-more">a little more. <img src="imgs/arrow.png"alt="arrow"></a>
+                </div><br>
+                <div id="woundedknee-more" class="show-more"><h4>Reservations created for Native Americans today often have high rates of alcoholism, suicide, and poverty, and the lowest life expectancies in the U.S</h4></div>
+             </div><!--#woundedknee-->
+
+            </div> <!--.event_right_forth-->
+
+        <div class="event_left_forth">
+
+        <div id="industrial_crowd"><img src="imgs/content/industrial_crowd.png" alt="timeline"></div>
+            <div id="industrial_red"><img src="imgs/content/industrial_red.png" alt="timeline"></div>
+
+
+        <div id="industrial">
+            <h3>1804 ad</h3>
+            <h1>Industrial Revolution</h1>
+            <p><h2>Transition from hand-made means of production to industrial. The Industrial Revolution affected nearly every aspect of daily life in some way, creating new social classes such as the worker as well.</h2>
+                </div> <!--.industrial-->
+
+           <div id="haiti"><img src="imgs/content/haiti.png" alt="timeline"></div>
+
+            <div id="haitian">
+            <h3>1804 ad</h3>
+            <h1>Haitian Revolution</h1>
+            <p><h2>The only example of a slave revolt leading to the formation of a state. However following the  revolt a vast difference in wealth and two distinct classes remained.</h2>
+                </div> <!--.haitian-->
+
+                <div id="thoreau"><img src="imgs/content/thoreau.png" alt="timeline"></div>
+                <div id="thoreau_type"><img src="imgs/content/thoreau_type.png" alt="timeline"></div>
+
+                <div id="thoreau">
+                <h6>“Is a democracy, such as we know it, the last improvement possible in government?”</h6>
+                <h5>Henry David Thoreau</h5>
+                </div> <!--#thoreau-->
+
+
+        </div><!--.event_left_forth-->
+
+	    </div> <!--.story-->
+	</div> <!--#forth-->
+
+	<div id="fifth">
+		<div class="story">
+<div class="timeline5"><img src="imgs/timeline_5.png"alt="timeline"></div>
+            <div class="event_right_fifth">
+
+             <div id="mussolini"><img src="imgs/content/mussolini.png" alt="timeline"></div>
+
+    <div id="mussolini">
+            <h3>1922 ad</h3>
+            <h1>Mussolini<br>takes power
+             <a href="http://en.wikipedia.org/wiki/Benito_Mussolini" target="_blank" ><img src="imgs/info_white.png" onmouseover="this.src='imgs/info_red.png'" onmouseout="this.src='imgs/info_white.png'"/></a>
+
+            </h1>
+            <p><h2>The first instance of Fascism, which was based on totalitarian government, nationalism, and an organized minority ruling a disorganized majority.</h2>
+			<div id="tellme"> <a href="#mussolini-more" class="btn-show-more">a little more.<img src="imgs/arrow.png"alt="arrow"></a>
+                </div><br>
+                <div id="mussolini-more" class="show-more"><h4>Fascism firmly implemented methods of hierarchal organization  with placement of some above others.</h4></div>
+	</div> <!--#mussolini-->
+
+	<div id="nazi">
+            <h3>1933 ad</h3>
+            <h1>Nazi<br>Germany
+             <a href="http://en.wikipedia.org/wiki/Nazi_Germany" target="_blank" ><img src="imgs/info_white.png" onmouseover="this.src='imgs/info_red.png'" onmouseout="this.src='imgs/info_white.png'"/></a>
+
+            </h1>
+            <p><h2>Following political and economic unrest Adolf Hitler instituted a fascist-totalitarian state that implemented harsh racial laws against minorities.</h2>
+			<div id="tellme"> <a href="#nazi-more" class="btn-show-more">a little more.  <img src="imgs/arrow.png"alt="arrow"></a>
+                </div><br>
+                <div id="nazi-more" class="show-more"><h4>Nazi Germany was considered more succesful in implementing a totalitarian police state then Mussolini and Italy.</h4></div>
+	</div> <!--#nazi-->
+
+	<div id="worker"><img src="imgs/content/spain.png" alt="timeline"></div>
+
+		<div id="spain">
+            <h3>1936 ad</h3>
+            <h1>Spanish<br>Civil War
+             <a href="http://en.wikipedia.org/wiki/Spanish_Civil_War" target="_blank" ><img src="imgs/info_white.png" onmouseover="this.src='imgs/info_red.png'" onmouseout="this.src='imgs/info_white.png'"/></a>
+
+            </h1>
+            <p><h2>Republicans in Spain fought military based Fascists in defense of the established Spanish Republic. The Fascists were victorious installing Franco as a dictator until 1975.</h2>
+			<div id="tellme"> <a href="#spain-more" class="btn-show-more">a little more. <img src="imgs/arrow.png"alt="arrow"></a>
+                </div><br>
+                <div id="spain-more" class="show-more"><h4>The civil war saw a clash in political ideologies such as communism, fascism and anarchism.</h4></div>
+	</div> <!--#spain-->
+
+	<div id="euro">
+            <h3>1960 ad</h3>
+            <h1>European<br>Free Trade
+             <a href="http://en.wikipedia.org/wiki/Eurozone" target="_blank" ><img src="imgs/info_white.png" onmouseover="this.src='imgs/info_red.png'" onmouseout="this.src='imgs/info_white.png'"/></a>
+
+            </h1>
+            <p><h2>The formation of the European Union sought to bring together Europe economically and politically.</h2>
+
+	</div> <!--#euro-->
+
+	 <div id="globe"><img src="imgs/content/globe.png" alt="timeline"></div>
+	 <div id="globe_lite"><img src="imgs/content/globe_lite.png" alt="timeline"></div>
+
+	<div id="globo">
+            <h3>1980 ad</h3>
+            <h1>Global<br>Capital
+             <a href="http://en.wikipedia.org/wiki/Capitalism#Globalization" target="_blank" ><img src="imgs/info_white.png" onmouseover="this.src='imgs/info_red.png'" onmouseout="this.src='imgs/info_white.png'"/></a>
+
+            </h1>
+            <p><h2>By relocating to low-wage states, and perpetuating global income in-equality capitalism has spread it’s sphere of influence well beyond the confines of western and developed nations.
+</h2>
+			<div id="tellme"> <a href="#globo-more" class="btn-show-more">a little more. <img src="imgs/arrow.png"alt="arrow"></a>
+                </div><br>
+                <div id="globo-more" class="show-more"><h4>The formation of the Eurozone has both unified and split Europe, with severe economic crisis' in Spain and Greece</h4></div>
+	</div> <!--#globo-->
+
+            </div><!--event_right_fifth-->
+
+            <div class="event_left_fifth">
+
+
+             <div id="wwone"><img src="imgs/content/wwone.png" alt="timeline"></div>
+             <div id="xxx"><img src="imgs/content/xxx.png" alt="timeline"></div>
+
+
+            <div id="worldwarone">
+            <h3>1914 ad</h3>
+            <h1>World<br>War One</h1>
+            <p><h2>Fervent nationalism in Europe mounted into the First World War, which resulted in the elimination of Ottomon and Austria-Hungarian Empires as well as vast territorial and economic losses in both Germany and Russia.</h2>
+</div> <!--#worldwarone-->
+
+<div id="greatdepression">
+            <h3>1930 ad</h3>
+            <h1>the Great<br>Depression</h1>
+            <p><h2>A worldwide economic succession that resulted in the emergence of new political ideologies such as communism and fascism.</h2>
+</div> <!--#greatdepression-->
+
+ <div id="plane"><img src="imgs/content/plane.png" alt="timeline"></div>
+
+<div id="worldwartwo">
+            <h3>1939 ad</h3>
+            <h1>World<br>War Two</h1>
+            <p><h2>The Second World War greatly altered political alignment and social structure of the World. It resulted in the creation of the United Nations and the beginning of the Cold War with the emergence of the Soviet Union and the U.S as super powers</h2>
+</div> <!--#worldwartwo-->
+
+ <div id="civil"><img src="imgs/content/civilrights.png" alt="timeline"></div>
+ <div id="rights"><img src="imgs/content/equal.png" alt="timeline"></div>
+
+<div id="civilrights">
+            <h3>1955 ad</h3>
+            <h1>Civil Rights<br>Movement</h1>
+            <p><h2>A worldwide movement ensuring that the rights of all people where equally protected by the law.</h2>
+</div> <!--#civilrights-->
+
+<div id="mlk">
+            <h6>“The greatest purveyor of violence
+ in the world – My own Government, <br> I can not be Silent.”</h6>
+            <h5>Martin Luther King Jr.</h5>
+                </div> <!--#mlk-->
+
+<div id="moon"><img src="imgs/content/moon.png" alt="timeline"></div>
+
+<div id="moonlanding">
+            <h3>1969 ad</h3>
+            <h1>Moon<br>Landing</h1>
+</div> <!--#moonlanding-->
+
+
+<div id="berlinwall">
+            <h3>1989 ad</h3>
+            <h1>Fall of the<br>Berlin Wall</h1>
+
+</div> <!--#berlinwall-->
+
+            </div><!--event_left_fifth-->
+
+		</div> <!--.story-->
+	</div> <!--#fifth-->
+
+	<div id="sixth">
+		<div class="story">
+		<div class="timeline6"><img src="imgs/timeline_6.png"alt="timeline"></div>
+            <div class="event_right_sixth">
+
+
+            <div id="jail_grey"><img src="imgs/content/jail_grey.png" alt="timeline"></div>
+            <div id="jail_black"><img src="imgs/content/jail_black.png" alt="timeline"></div>
+
+                <div id="prison">
+            <h3></h3>
+            <h1>Over<br>Imprisonment
+             <a href="http://en.wikipedia.org/wiki/Incarceration_in_the_United_States" target="_blank" ><img src="imgs/info_white.png" onmouseover="this.src='imgs/info_black.png'" onmouseout="this.src='imgs/info_white.png'"/></a>
+           </h1>
+            <p><h2>The U.S imprisonment rate has quardupled since 1980 reaching the highest rate of imprisonment of their own citizens in the world. Incarcerating 754 per 100,000 people.</h2>
+                <div id="tellme">
+
+                    <a href="#prison-more" class="btn-show-more">a little more. <img src="imgs/arrow_white.png"alt="arrow"></a>
+
+
+                </div><br>
+                <div id="prison-more" class="show-more"><h4>Among many other issues with the prison system: Crime-rate is similiar regardless of race, however the rate of imprisonment of African-Americans and Latinos being much higher then that of White Americans, resulting in societal repression or a form of new-age discrimination.
+
+                    </h4></div>
+                    </div> <!--#prison-->
+
+
+
+                    <div id="surveillance"><img src="imgs/content/surveillance.png"  alt="timeline"></div>
+
+                <div id="data">
+            <h3></h3>
+            <h1>Big<br>Data
+             <a href="http://en.wikipedia.org/wiki/Big_data" target="_blank" ><img src="imgs/info_white.png" onmouseover="this.src='imgs/info_black.png'" onmouseout="this.src='imgs/info_white.png'"/></a>
+           </h1>
+            <p><h2>The internet is changing how we think about privacy everyday. Internet giants cash in on massive amounts of it's users information, which can be shared with big businesses and government agencies.
+
+             </h2>
+                <div id="tellme">
+
+                    <a href="#data-more" class="btn-show-more">a little more. <img src="imgs/arrow_white.png"alt="arrow"></a>
+
+                </div><br>
+                <div id="data-more" class="show-more"><h4>By violating privacy, Big Data is emerging as a new form of power that is frighteningly reminiscent of George Orwell's 1984.</h4></div>
+                    </div> <!--#data-->
+
+
+            </div> <!--.event_right_sixth-->
+
+            <div class="event_left_sixth">
+
+<div id="internet"><img src="imgs/content/internet.png"  alt="timeline"></div>
+
+         <div id="internet">
+            <h3></h3>
+            <h1>the Internet</h1>
+            <p><h2>the Internet has had a tremendous impact on modern society, completely restructuring how we communicate and interact. It also acts as a valuable political tool, giving an outlet for the people to voice opinions.</h2>
+        </div> <!--#internet-->
+
+        <div id="proudhon"><img src="imgs/content/proudhon.png" height="400px" alt="timeline"></div>
+        <div id="proudhon_txt"><img src="imgs/content/proudhon_txt.png" alt="timeline"></div>
+
+                <div id="proudhon">
+            <h6>“To be ruled is to be kept an eye on.”</h6>
+            <h5>Joseph Proudhon</h5>
+                </div> <!--proudhon-->
+
+            </div> <!--.event_left_sixth-->
+
+	</div> <!--.story-->
+	</div> <!--#sixth-->
+
+	<div id="about">
+		<div class="story">
+
+	<div id="about_box">
+	<h1>the more you know.</h1>
+
+	<span id="dropcap">A</span>
+	<h2>more comprehensive understanding of authority and autonomy on small and large scales influences our ability to move forward as individuals and as a community; taking steps away from power-over and moving towards power-to.<br><br>Admittedly, the depiction of human history in this project is euro-centric and western in it's approach. There is a great deal that has been left out, although many of the same themes are persistent across cultures and history. <br><br>This site was built as part of a thesis project in design and digital media at Champlain College in 2013.<br><br>Typefaces include Spezia & Spezia Serif by <a href="https://luzi-type.ch/index" target="blank">Luzitype.</a></h2>
+<br>
+				<div id="tellme"> <a href="#about-more" class="btn-show-more">share</a>
+                </div><br>
+                <div id="about-more" class="show-more">
+
+
+                    <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+                    <a href="https://twitter.com/intent/tweet?text=A%20Brief%20History%20of%20Authority&url=https%3A%2F%2Fautonomi.org%2F&related=episod"><img src="imgs/tweet.png" onmouseover="this.src='imgs/tweet_red.png'" onmouseout="this.src='imgs/tweet.png'"/></a>
+
+
+
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fautonomi.org" target="_blank"> <img src="imgs/fbook.png" onmouseover="this.src='imgs/fbook_red.png'" onmouseout="this.src='imgs/fbook.png'"/></a>
+
+
+        </div>
+
+<br><br>
+
+
+
+</div>
+	</div> <!--.story-->
+
+	</div> <!--#about-->
+	<div id="footer">
+
+
+		 <div id="footer_logo"><br><a href="#splash"><img src="imgs/content/footer_logo.png" onmouseover="this.src='imgs/content/footer_logo_red.png'" onmouseout="this.src='imgs/content/footer_logo.png'"/></a>
+
+
+
+		 </div><br>
+
+
+	</div> <!--#footer-->
+
+
+    </div><!--.scrollblock-->
+</body>
+</html>

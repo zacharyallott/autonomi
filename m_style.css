@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color:#F2F1EC;	
+	
+}
+#mobilecontainer{
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:40px;
+}
+
+#mobilecontainer h1 {
+	font-family: 'FranklinGothicURW-Dem', sans-serif;
+	font-weight:700;
+    font-size:36px;
+    color:#D63934;
+    line-height:0.1em;
+
+}
+
+#mobilecontainer h2 {
+	font-family: 'FranklinGothicURW-Dem', sans-serif;
+	font-weight:700;
+    font-size:12px;
+    color:#1F1F1F;
+    line-height:0.2em;
+}
+
+h3 {
+	font-family: 'FranklinGothicURW-Dem', sans-serif;
+	font-weight:700;
+    font-size:18px;
+    color:#F2F1EC;
+    line-height:1em;
+}
+
+h4{
+	font-family: 'Libre Baskerville', serif;
+    font-size:12px;
+    line-height:1.2em;
+    color:#1F1F1F
+
+}
+h5 {
+	font-family: 'FranklinGothicURW-Dem', sans-serif;
+	font-weight:700;
+    font-size:10px;
+    color:#F2F2F2;
+    line-height:1em;
+}
+
+
+
+#mobilecontainer a:link {
+	font-family: 'FranklinGothicURW-Dem', sans-serif;
+	font-weight:700;
+    font-size:10px;
+    color:#1F1F1F;
+    line-height:0.2em;
+    text-decoration:none;
+
+}
+
+#mobilecontainer a:hover {
+	font-family: 'FranklinGothicURW-Dem', sans-serif;
+	font-weight:700;
+    font-size:10px;
+    color:#D63934;
+    line-height:0.2em;
+        text-decoration:none;
+
+}
+
+#mobilecontainer a:visited {
+	font-family: 'FranklinGothicURW-Dem', sans-serif;
+	font-weight:700;
+    font-size:10px;
+    color:#1F1F1F;
+    line-height:0.2em;
+        text-decoration:none;
+
+}
+
+#drop-cap{
+float:left;
+
+}
+
+#logo_small{
+position:relative;
+left:215px;
+top:15px;
+
+}
+
+.mobile-show-more{
+
+    border-bottom:solid 1px #F1F1F1;
+    padding-top:5px;
+    padding-left:10px;
+    padding-right:10px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:#D63934;
+    background-image:url(imgs/texture_white.png);
+    width:80%;
+   	
+
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(33, 33, 33, .05);
+box-shadow: 2px 2px 2px 2px rgba(33, 33, 33, .05);
+
+    
+}
